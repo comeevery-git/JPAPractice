@@ -17,6 +17,9 @@ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org
 			<property name="hibernate.show_sql" value="true"/>
 			<property name="hibernate.format_sql" value="true"/>
 			<property name="hibernate.use_sql_comments" value="true"/>
+			<!-- batchSize 만큼 모아서 한방에 DB에 쿼리 실행(버퍼와 같은 기능) -->
+			<property name="hibernate.jdbc.batch_size" value="10"/>
+
 <!-- 			<property name="hibernate.hbm2ddl.auto" value="create" /> -->
 		</properties>
 	</persistence-unit>
